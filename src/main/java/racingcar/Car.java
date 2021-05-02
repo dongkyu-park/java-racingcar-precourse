@@ -16,4 +16,21 @@ public class Car {
         return this;
     }
 
+    @Override
+    public String toString() {
+        String dashBar = "";
+        for (int i = 0; i < position; i++) {
+            dashBar = dashBar + "-";
+        }
+        return carName + " : " + dashBar;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public String getCarName() {
+        return carName;
+    }
+
 }
