@@ -2,7 +2,7 @@ package racingcar;
 
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.AssertionsForClassTypes.*;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 public class CarsTest {
 
@@ -22,4 +22,5 @@ public class CarsTest {
     void validate_car_name_duplicate() {
         assertThatThrownBy(()->new Cars("test, test")).isInstanceOf(IllegalArgumentException.class);
     }
+
 }

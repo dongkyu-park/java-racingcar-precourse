@@ -11,4 +11,5 @@ public class RacingCountTest {
         assertThatThrownBy(()->new RacingCount(0)).isInstanceOf(IllegalArgumentException.class);
         assertThatThrownBy(()->new RacingCount(-1)).isInstanceOf(IllegalArgumentException.class);
     }
+
 }

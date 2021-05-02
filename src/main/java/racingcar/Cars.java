@@ -3,6 +3,7 @@ package racingcar;
 import java.util.*;
 
 public class Cars {
+
     public static final int MIN_LENGTH = 1;
     public static final int MAX_LENGTH = 5;
     public static final int MIN_CAR_ARRAY = 2;
@@ -23,6 +24,10 @@ public class Cars {
             throw new IllegalArgumentException("중복 된 레이싱 카 이름이 존재합니다.");
         }
         this.carList = mapCar(tempCarArray);
+    }
+
+    public List<Car> getCarList() {
+        return carList;
     }
 
     private List<Car> mapCar(String[] tempCarArray) {

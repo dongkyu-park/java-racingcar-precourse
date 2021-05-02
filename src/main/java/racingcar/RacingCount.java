@@ -3,6 +3,7 @@ package racingcar;
 public class RacingCount {
 
     public static final int MIN_RACING_COUNT = 1;
+
     private int racingCount;
 
     public RacingCount(int count) {
@@ -11,4 +12,5 @@ public class RacingCount {
         }
         this.racingCount = count;
     }
+
 }
