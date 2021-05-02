@@ -13,4 +13,8 @@ public class RacingCount {
         this.racingCount = count;
     }
 
+    public int getRacingCount() {
+        return racingCount;
+    }
+
 }
